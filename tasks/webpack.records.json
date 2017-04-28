@@ -1,0 +1,105 @@
+{
+  "extract-text-webpack-plugin": [
+    {
+      "nextFreeModuleId": 2,
+      "modules": {
+        "byIdentifier": {
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\index.scss": 0,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\lib\\css-base.js": 1
+        }
+      },
+      "nextFreeChunkId": 1,
+      "chunks": {
+        "byName": {},
+        "byBlocks": {}
+      }
+    },
+    {
+      "nextFreeModuleId": 8,
+      "modules": {
+        "byIdentifier": {
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskPopup.scss": 0,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\lib\\css-base.js": 1,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\loading_bg.png": 2,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\loading_circle.png": 3,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_center.png": 4,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_left.png": 5,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_right.png": 6,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\diamond.png": 7
+        }
+      },
+      "nextFreeChunkId": 1,
+      "chunks": {
+        "byName": {},
+        "byBlocks": {}
+      }
+    },
+    {
+      "nextFreeModuleId": 8,
+      "modules": {
+        "byIdentifier": {
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskTab.scss": 0,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\lib\\css-base.js": 1,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\redPoint.png": 2,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_erected_bg.png": 3,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_erected_greenBg.png": 4,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_hadErected_bg.png": 5,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_hadErected_greenBg.png": 6,
+          "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\close_redBtn.png": 7
+        }
+      },
+      "nextFreeChunkId": 1,
+      "chunks": {
+        "byName": {},
+        "byBlocks": {}
+      }
+    }
+  ],
+  "nextFreeModuleId": 31,
+  "modules": {
+    "byIdentifier": {
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\index.js": 0,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\html-loader\\0.4.3\\html-loader\\index.js?attrs=img:src img:data-original!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\file-loader\\0.8.5\\file-loader\\index.js?name=html\\[name].[ext]!src\\html\\index.html": 1,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\extract-text-webpack-plugin\\1.0.1\\extract-text-webpack-plugin\\loader.js?{\"omit\":1,\"extract\":true,\"remove\":true}!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\style-loader\\0.13.1\\style-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\index.scss": 2,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\index.scss": 3,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\lib\\css-base.js": 4,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\style-loader\\0.13.1\\style-loader\\addStyles.js": 5,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\taskPopup.js": 0,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\html-loader\\0.4.3\\html-loader\\index.js?attrs=img:src img:data-original!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\file-loader\\0.8.5\\file-loader\\index.js?name=html\\[name].[ext]!src\\html\\taskPopup.html": 6,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\extract-text-webpack-plugin\\1.0.1\\extract-text-webpack-plugin\\loader.js?{\"omit\":1,\"extract\":true,\"remove\":true}!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\style-loader\\0.13.1\\style-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskPopup.scss": 7,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskPopup.scss": 8,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\loading_bg.png": 9,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\loading_circle.png": 10,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_center.png": 11,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_left.png": 12,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\title_right.png": 13,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\taskPopup\\diamond.png": 14,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\js\\taskPopup.js": 15,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\js\\taskPopupHandler.js": 16,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\babel-runtime\\core-js\\json\\stringify.js": 17,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\babel-runtime\\node_modules\\core-js\\library\\fn\\json\\stringify.js": 18,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\babel-runtime\\node_modules\\core-js\\library\\modules\\_core.js": 19,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\js\\taskPopupUi.js": 20,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\tasktab.js": 0,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\html-loader\\0.4.3\\html-loader\\index.js?attrs=img:src img:data-original!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\file-loader\\0.8.5\\file-loader\\index.js?name=html\\[name].[ext]!src\\html\\taskTab.html": 21,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\extract-text-webpack-plugin\\1.0.1\\extract-text-webpack-plugin\\loader.js?{\"omit\":1,\"extract\":true,\"remove\":true}!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\style-loader\\0.13.1\\style-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskTab.scss": 22,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\css-loader\\0.23.1\\css-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\autoprefixer-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\sass-loader\\3.2.0\\sass-loader\\index.js!..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\postcss-loader\\0.9.1\\postcss-loader\\index.js!src\\sass\\taskTab.scss": 23,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\redPoint.png": 24,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_erected_bg.png": 25,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_erected_greenBg.png": 26,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_hadErected_bg.png": 27,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\border_hadErected_greenBg.png": 28,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\url-loader\\0.5.7\\url-loader\\index.js?limit=8192&name=image\\[name].[ext]?[hash]!src\\image\\close_redBtn.png": 29,
+      "..\\..\\..\\..\\..\\..\\beifen\\yogo\\commons-packages\\gw\\node_modules\\.npminstall\\babel-loader\\6.2.4\\babel-loader\\index.js?{\"presets\":[\"es2015\",\"stage-0\"],\"plugins\":[\"transform-runtime\"]}!src\\js\\taskTab.js": 30
+    }
+  },
+  "nextFreeChunkId": 3,
+  "chunks": {
+    "byName": {
+      "index": 0,
+      "taskPopup": 1,
+      "tasktab": 2
+    },
+    "byBlocks": {}
+  }
+}
