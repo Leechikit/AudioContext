@@ -141,7 +141,6 @@ VolumeSample.toggle = function() {
   this.playing = !this.playing;
 };
 
-
 /**
  * 混合两个音频
  *
