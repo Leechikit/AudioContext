@@ -34,7 +34,18 @@ function volumeSample(obj) {
         var fraction = parseInt(element.value) / parseInt(element.max);
         // Let's use an x*x curve (x-squared) since simple linear (x) does not
         // sound as good.
-        this.gainNode.gain.value = fraction * fraction;
+        //this.gainNode.gain.value = fraction * fraction;
+        var waveArray = new Float32Array(9);
+        waveArray[0] = 0.5;
+        waveArray[1] = 1;
+        waveArray[2] = 0.5;
+        waveArray[3] = 0;
+        waveArray[4] = 0.5;
+        waveArray[5] = 1;
+        waveArray[6] = 0.5;
+        waveArray[7] = 0;
+        waveArray[8] = 0.5;
+        this.gainNode.gain.setValueCurveAtTime(waveArray, context.currentTime, 2);
     };
 
     VolumeSample.stop = function() {
@@ -46,13 +57,13 @@ function volumeSample(obj) {
         this.playing = !this.playing;
     };
 
-    function eventBind(){
-        document.querySelector('#volumeSample_toggle').addEventListener('click',function(event){
+    function eventBind() {
+        document.querySelector('#volumeSample_toggle').addEventListener('click', function(event) {
             event.preventDefault();
             VolumeSample.toggle();
         });
 
-        document.querySelector('#volumeSample_changeVolume').addEventListener('change',function(event){
+        document.querySelector('#volumeSample_changeVolume').addEventListener('change', function(event) {
             event.preventDefault();
             VolumeSample.changeVolume(event.target);
         });

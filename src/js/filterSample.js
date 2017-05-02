@@ -57,7 +57,7 @@ function filterSample(obj) {
 	};
 
 	FilterSample.changeQuality = function(element) {
-		this.filter.gain.value = element.value * this.QUAL_MUL;
+		this.filter.Q.value = element.value * this.QUAL_MUL;
 	};
 
 	FilterSample.toggleFilter = function(element) {
