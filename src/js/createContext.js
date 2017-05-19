@@ -25,7 +25,7 @@ function loadBuffers() {
     names.push(name);
     paths.push(path);
   }
-  bufferLoader = new BufferLoader(context, paths, function(bufferList) {
+  var bufferLoader = new BufferLoader(context, paths, function(bufferList) {
     for (var i = 0; i < bufferList.length; i++) {
       var buffer = bufferList[i];
       var name = names[i];

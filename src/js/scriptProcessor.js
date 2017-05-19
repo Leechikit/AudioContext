@@ -23,7 +23,6 @@ function scriptProcessor(obj) {
 
         // Create a ScriptProcessorNode with a bufferSize of 4096 and a single input and output channel
         var scriptNode = context.createScriptProcessor(4096, 1, 1);
-        console.log(scriptNode.bufferSize);
 
         // load in an audio track via XHR and decodeAudioData
 

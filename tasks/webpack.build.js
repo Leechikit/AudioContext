@@ -43,6 +43,14 @@ module.exports = {
         }, {
             test: /\.(html)$/,
             loader: 'html?attrs=img:src img:data-original!file?name=html/[name].[ext]'
+        }, {
+            test:/\.(js)$/,
+            exclude: /(node_modules)/,
+            loader: 'babel',
+            query: {
+              presets: ['es2015','stage-0'],
+              plugins: ['transform-runtime']
+            }
         }]
     },
     //其它解决方案配置
