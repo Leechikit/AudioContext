@@ -1,13 +1,13 @@
-const {
+import {
     BUFFERS,
     context
-} = require('./js/createContext');
-const rhythmSample = require('./js/rhythmSample');
-const volumeSample = require('./js/volumeSample');
-const crossfadeSample = require('./js/crossfadeSample');
-const crossfadePlaylistSample = require('./js/crossfadePlaylistSample');
-const filterSample = require('./js/filterSample');
-const scriptProcessor = require('./js/scriptProcessor');
+} from './js/createContext';
+import rhythmSample from './js/rhythmSample';
+import volumeSample from './js/volumeSample';
+import crossfadeSample from './js/crossfadeSample';
+import crossfadePlaylistSample from './js/crossfadePlaylistSample';
+import filterSample from './js/filterSample';
+import scriptProcessor from './js/scriptProcessor';
 
 // 播放音频
 rhythmSample({
