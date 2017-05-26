@@ -1,10 +1,10 @@
 // Keep track of all loaded buffers.
-var BUFFERS = {};
+let BUFFERS = {};
 // Page-wide audio context.
-var context = null;
+let context = null;
 
 // An object to track the buffers to load {name: path}
-var BUFFERS_TO_LOAD = {
+let BUFFERS_TO_LOAD = {
   kick: '../sounds/kick.wav',
   snare: '../sounds/snare.wav',
   hihat: '../sounds/hihat.wav',
@@ -18,17 +18,17 @@ var BUFFERS_TO_LOAD = {
 // Loads all sound samples into the buffers object.
 function loadBuffers() {
   // Array-ify
-  var names = [];
-  var paths = [];
-  for (var name in BUFFERS_TO_LOAD) {
-    var path = BUFFERS_TO_LOAD[name];
+  let names = [];
+  let paths = [];
+  for (let name in BUFFERS_TO_LOAD) {
+    let path = BUFFERS_TO_LOAD[name];
     names.push(name);
     paths.push(path);
   }
-  var bufferLoader = new BufferLoader(context, paths, function(bufferList) {
-    for (var i = 0; i < bufferList.length; i++) {
-      var buffer = bufferList[i];
-      var name = names[i];
+  let bufferLoader = new BufferLoader(context, paths, function(bufferList) {
+    for (let i = 0; i < bufferList.length; i++) {
+      let buffer = bufferList[i];
+      let name = names[i];
       BUFFERS[name] = buffer;
     }
   });

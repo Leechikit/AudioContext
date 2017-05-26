@@ -5,22 +5,22 @@
  * @update: 
  */
 function filterSample(obj) {
-	var FilterSample = {
+	let FilterSample = {
 		FREQ_MUL: 7000,
 		QUAL_MUL: 30,
 		playing: false
 	};
-	var {
+	let {
 		context,
 		BUFFERS
 	} = obj;
 
 	FilterSample.play = function() {
 		// Create the source.
-		var source = context.createBufferSource();
+		let source = context.createBufferSource();
 		source.buffer = BUFFERS.techno;
 		// Create the filter.
-		var filter = context.createBiquadFilter();
+		let filter = context.createBiquadFilter();
 		filter.type = 0; // LOWPASS
 		filter.frequency.value = 5000;
 		// Connect source to filter, filter to destination.
@@ -46,12 +46,12 @@ function filterSample(obj) {
 	FilterSample.changeFrequency = function(element) {
 		// Clamp the frequency between the minimum value (40 Hz) and half of the
 		// sampling rate.
-		var minValue = 40;
-		var maxValue = context.sampleRate / 2;
+		let minValue = 40;
+		let maxValue = context.sampleRate / 2;
 		// Logarithm (base 2) to compute how many octaves fall in the range.
-		var numberOfOctaves = Math.log(maxValue / minValue) / Math.LN2;
+		let numberOfOctaves = Math.log(maxValue / minValue) / Math.LN2;
 		// Compute a multiplier from 0 to 1 based on an exponential scale.
-		var multiplier = Math.pow(2, numberOfOctaves * (element.value - 1.0));
+		let multiplier = Math.pow(2, numberOfOctaves * (element.value - 1.0));
 		// Get back to the frequency value between min and max.
 		this.filter.frequency.value = maxValue * multiplier;
 	};

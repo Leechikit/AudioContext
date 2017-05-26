@@ -5,8 +5,8 @@
  * @update: 
  */
 function volumeSample(obj) {
-    var VolumeSample = {};
-    var {
+    let VolumeSample = {};
+    let {
         context,
         BUFFERS
     } = obj;
@@ -16,7 +16,7 @@ function volumeSample(obj) {
 
     VolumeSample.play = function() {
         this.gainNode = context.createGain();
-        var source = context.createBufferSource();
+        let source = context.createBufferSource();
         source.buffer = BUFFERS.techno;
 
         // Connect source to a gain node
@@ -30,12 +30,12 @@ function volumeSample(obj) {
     };
 
     VolumeSample.changeVolume = function(element) {
-        var volume = element.value;
-        var fraction = parseInt(element.value) / parseInt(element.max);
+        let volume = element.value;
+        let fraction = parseInt(element.value) / parseInt(element.max);
         // Let's use an x*x curve (x-squared) since simple linear (x) does not
         // sound as good.
         //this.gainNode.gain.value = fraction * fraction;
-        var waveArray = new Float32Array(9);
+        let waveArray = new Float32Array(9);
         waveArray[0] = 0.5;
         waveArray[1] = 1;
         waveArray[2] = 0.5;

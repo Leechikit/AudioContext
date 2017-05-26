@@ -5,22 +5,22 @@
  * @update: 
  */
 function crossfadePlaylistSample(obj) {
-	var CrossfadePlaylistSample = {
+	let CrossfadePlaylistSample = {
 		FADE_TIME: 1, // Seconds
 		playing: false
 	};
-	var {
+	let {
 		context,
 		BUFFERS
 	} = obj;
 
 	CrossfadePlaylistSample.play = function() {
-		var ctx = this;
+		let ctx = this;
 		playHelper(BUFFERS.jam, BUFFERS.crowd);
 
 		function createSource(buffer) {
-			var source = context.createBufferSource();
-			var gainNode = context.createGain();
+			let source = context.createBufferSource();
+			let gainNode = context.createGain();
 			source.buffer = buffer;
 			// Connect source to gain.
 			source.connect(gainNode);
@@ -34,12 +34,12 @@ function crossfadePlaylistSample(obj) {
 		}
 
 		function playHelper(bufferNow, bufferLater) {
-			var playNow = createSource(bufferNow);
-			var source = playNow.source;
+			let playNow = createSource(bufferNow);
+			let source = playNow.source;
 			ctx.source = source;
-			var gainNode = playNow.gainNode;
-			var duration = bufferNow.duration;
-			var currTime = context.currentTime;
+			let gainNode = playNow.gainNode;
+			let duration = bufferNow.duration;
+			let currTime = context.currentTime;
 			// Fade the playNow track in.
 			gainNode.gain.linearRampToValueAtTime(0, currTime);
 			gainNode.gain.linearRampToValueAtTime(1, currTime + ctx.FADE_TIME);
@@ -49,7 +49,7 @@ function crossfadePlaylistSample(obj) {
 			gainNode.gain.linearRampToValueAtTime(1, currTime + duration - ctx.FADE_TIME);
 			gainNode.gain.linearRampToValueAtTime(0, currTime + duration);
 			// Schedule a recursive track change with the tracks swapped.
-			var recurse = arguments.callee;
+			let recurse = arguments.callee;
 			ctx.timer = setTimeout(function() {
 				recurse(bufferLater, bufferNow);
 			}, (duration - ctx.FADE_TIME) * 1000);

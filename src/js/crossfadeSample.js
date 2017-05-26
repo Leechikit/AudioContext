@@ -6,8 +6,8 @@
  */
 
 function crossfadeSample(obj) {
-	var CrossfadeSample = {};
-	var {
+	let CrossfadeSample = {};
+	let {
         context,
         BUFFERS
     } = obj;
@@ -25,8 +25,8 @@ function crossfadeSample(obj) {
 		//this.crossfade({});
 
 		function createSource(buffer) {
-			var source = context.createBufferSource();
-			var gainNode = context.createGain();
+			let source = context.createBufferSource();
+			let gainNode = context.createGain();
 			source.buffer = buffer;
 			// Turn on looping
 			source.loop = true;
@@ -49,10 +49,10 @@ function crossfadeSample(obj) {
 
 	// Fades between 0 (all source 1) and 1 (all source 2)
 	CrossfadeSample.crossfade = function(element) {
-		var x = parseInt(element.value) / parseInt(element.max);
+		let x = parseInt(element.value) / parseInt(element.max);
 		// Use an equal-power crossfading curve:
-		var gain1 = 0.5 * (1.0 + Math.cos(x * Math.PI));
-		var gain2 = 0.5 * (1.0 + Math.cos((1.0 - x) * Math.PI));
+		let gain1 = 0.5 * (1.0 + Math.cos(x * Math.PI));
+		let gain2 = 0.5 * (1.0 + Math.cos((1.0 - x) * Math.PI));
 		this.ctl1.gainNode.gain.value = gain1;
 		this.ctl2.gainNode.gain.value = gain2;
 	};
