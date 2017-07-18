@@ -1,5 +1,5 @@
 {
-  "name": "taskSystem",
+  "name": "AudioContext",
   "version": "0.1.0",
   "description": "",
   "repository": {},
@@ -13,8 +13,6 @@
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-runtime": "^6.18.0",
-    "browser-sync": "^2.18.5",
-    "browser-sync-webpack-plugin": "^1.1.3",
     "core-js": "^2.4.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
