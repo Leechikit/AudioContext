@@ -3,7 +3,7 @@ var path = require('path');
 var fs = require('fs');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var config = require('../config').default;
-var publicPath = config.publicPath+'project/tasksystem/pc/';
+var publicPath = config.publicPath+'';
 
 module.exports = {
     //插件项
