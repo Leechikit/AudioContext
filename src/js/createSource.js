@@ -75,4 +75,8 @@ Source.prototype.controlFrequency = function(value) {
 	this.bufferSource && (this.filter.frequency.value = value);
 }
 
+Source.prototype.gainNodeDisconnect = function(){
+	this.gainNode.disconnect();
+}
+
 export default Source;

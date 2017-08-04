@@ -18,6 +18,6 @@ setTimeout(() => {
     // sound2.start();
     sound3.start();
     setTimeout(()=>{
-        sound3.controlVolume(0.2);
+        sound3.gainNodeDisconnect();
     },3000);
 }, 5000)
