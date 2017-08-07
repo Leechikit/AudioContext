@@ -1,3 +1,6 @@
+// 音頻地址
+// const songUrl = 'https://leechikit.github.io/resources/article/AudioContext/song/fingfingxia.mp3';
+const songUrl = '../sounds/dj.m4a';
 // AudioContext对象
 let audioContext = null;
 // 音频源
@@ -8,6 +11,8 @@ let gainNode = null;
 let isStart = false;
 // 播放按钮元素
 let buttonEl = document.querySelector('#button');
+// 音量控件元素
+let volumnEl = document.querySelector('#volumn');
 
 /**
 * 创建AudioContext上下文
@@ -62,8 +67,8 @@ function createBufferSource(config) {
 * 创建GainNode对象
 *
 */
-function createGainNode(){
-    gainNode = audioContext.createGainNode();
+function createGainNode() {
+    gainNode = audioContext.createGain();
 }
 
 /**
@@ -71,12 +76,12 @@ function createGainNode(){
 *
 */
 function buttonClickEvent(buffer) {
-    document.querySelector('#button').addEventListener('click', (event) => {
+    buttonEl.addEventListener('click', (event) => {
         // 停止播放
         if (isStart) {
             event.target.innerText = 'START';
             bufferSource && bufferSource.stop();
-        // 开始播放
+            // 开始播放
         } else {
             event.target.innerText = 'STOP';
             createBufferSource({
@@ -93,14 +98,25 @@ function buttonClickEvent(buffer) {
 }
 
 /**
+* 改变音量事件
+*
+*/
+function changeVolumnEvent() {
+    volumnEl.addEventListener('change', (event) => {
+        gainNode && (gainNode.gain.value = event.target.value / 5);
+    });
+}
+
+/**
 * 初始化
 *
 */
 function init() {
     createAudioContext();
-    decodeAudioData('https://leechikit.github.io/resources/article/AudioContext/song/fingfingxia.mp3', (buffer) => {
-        buttonEl.setAttribute('data-loaded',true);
+    decodeAudioData(songUrl, (buffer) => {
+        buttonEl.setAttribute('data-loaded', true);
         buttonClickEvent(buffer);
+        changeVolumnEvent();
     });
 }
 
