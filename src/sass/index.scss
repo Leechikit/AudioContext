@@ -19,3 +19,20 @@ footer{
 	bottom: 2px;
 	color:#aaa;
 }
+#button{
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	width:120px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	color:yellow;
+	border:1px solid yellow;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
