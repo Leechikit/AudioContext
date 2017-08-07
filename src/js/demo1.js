@@ -4,6 +4,8 @@ let audioContext = null;
 let bufferSource = null;
 // 是否播放
 let isStart = false;
+// 播放按钮元素
+let buttonEl = document.querySelector('#button');
 
 /**
 * 创建AudioContext上下文
@@ -42,18 +44,16 @@ function decodeAudioData(url, callback) {
 }
 
 /**
-* 创建Source对象
+* 创建AudioBufferSourceNode
 *
 */
 function createBufferSource(config) {
-    let bufferSource = null;
     bufferSource = audioContext.createBufferSource();
     bufferSource.buffer = config.buffer;
     bufferSource.loop = config.loop || false;
     bufferSource.onended = () => {
         bufferSource = null;
     }
-    return bufferSource;
 }
 
 /**
@@ -69,7 +69,7 @@ function buttonClickEvent(buffer) {
         // 开始播放
         } else {
             event.target.innerText = 'STOP';
-            bufferSource = createBufferSource({
+            createBufferSource({
                 buffer,
                 loop: true
             });
@@ -87,6 +87,7 @@ function buttonClickEvent(buffer) {
 function init() {
     createAudioContext();
     decodeAudioData('https://leechikit.github.io/resources/article/AudioContext/song/fingfingxia.mp3', (buffer) => {
+        buttonEl.setAttribute('data-loaded',true);
         buttonClickEvent(buffer);
     });
 }
