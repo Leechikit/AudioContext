@@ -1,6 +1,5 @@
 // 音頻地址
-// const songUrl = 'https://leechikit.github.io/resources/article/AudioContext/song/fingfingxia.mp3';
-const songUrl = '../sounds/dj.m4a';
+const SONG1 = 'https://leechikit.github.io/resources/article/AudioContext/song/fingfingxia1.mp3';
 // AudioContext对象
 let audioContext = null;
 // 音频源
@@ -10,9 +9,9 @@ let gainNode = null;
 // 是否播放
 let isStart = false;
 // 播放按钮元素
-let buttonEl = document.querySelector('#button');
+let buttonEl = document.querySelector('#button1');
 // 音量控件元素
-let volumnEl = document.querySelector('#volumn');
+let volumnEl = document.querySelector('#volumn1');
 
 /**
 * 创建AudioContext上下文
@@ -44,7 +43,7 @@ function decodeAudioData(url, callback) {
             }
         })
     }
-    request.onerror = function () {
+    request.onerror = ()=> {
         alert('BufferLoader: XHR error');
     }
     request.send();
@@ -103,7 +102,7 @@ function buttonClickEvent(buffer) {
 */
 function changeVolumnEvent() {
     volumnEl.addEventListener('change', (event) => {
-        gainNode && (gainNode.gain.value = event.target.value / 5);
+        gainNode && (gainNode.gain.value = event.target.value / 50);
     });
 }
 
@@ -113,7 +112,7 @@ function changeVolumnEvent() {
 */
 function init() {
     createAudioContext();
-    decodeAudioData(songUrl, (buffer) => {
+    decodeAudioData(SONG1, (buffer) => {
         buttonEl.setAttribute('data-loaded', true);
         buttonClickEvent(buffer);
         changeVolumnEvent();

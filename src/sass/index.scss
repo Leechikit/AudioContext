@@ -1,15 +1,13 @@
-html, body {
-	height:100%;
-    margin: 0;
-    font-family: arial, "Microsoft YaHei";
-    background-color: #272822;
-	color: #FEFEFE;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+html,body{
+  display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+  height:100%;
+  color:#fff;
+  background-color:#333;
 }
-#button{
+#button1,#button2{
 	width:120px;
 	height: 40px;
 	font-size: 20px;

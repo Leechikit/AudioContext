@@ -22,4 +22,4 @@ import './sass/index.scss';
 //     },3000);
 // }, 5000)
 
-import './js/demo2.js'
+import './js/demo1.js'
